@@ -1,0 +1,6 @@
+Erro: [2] require_once(/home/pedro/Local Sites/pedroavelar/app/public/wp-content/themes/pedroavelar./inc/configs.php): failed to open stream: No such file or directory - /home/pedro/Local Sites/pedroavelar/app/public/wp-content/themes/pedroavelar/functions.php:9
+
+Erro: [2] require_once(/home/pedro/Local Sites/pedroavelar/app/public/wp-content/themes/pedroavelar./inc/configs.php): failed to open stream: No such file or directory - /home/pedro/Local Sites/pedroavelar/app/public/wp-content/themes/pedroavelar/functions.php:9
+
+Erro: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'pwp_log_viewer_admin_styles' not found or invalid function name - /home/pedro/Local Sites/pedroavelar/app/public/wp-includes/class-wp-hook.php:324
+
