@@ -31,12 +31,13 @@ Send an email to pedro.emanuel.avl@gmail.com with subject contribute to Simple L
 == Screenshots ==
 1. Adding logs archive logic
 2. Bug fix conflicts ajax calls in browser console, and fix charger loading page
+3. Added option to activate WP_DEBUG in plugin settings
+
 
 == Changelog ==
+**Path Version**
+1.0.1 - internationalization and support WP_DEBUG enable in pannel settings
 **Version Beta**
 1.0.0 Pre release
 **Develop version**
 0.0.1 Initial release
-
-== Upgrade Notice ==
-1.0 version Beta
