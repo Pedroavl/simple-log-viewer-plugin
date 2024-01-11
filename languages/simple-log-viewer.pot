@@ -1,0 +1,119 @@
+# Copyright (C) 2024 Pedro Avelar
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Log Viewer 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/simple-log-viewer\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-01-10T12:23:24+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: simple-log-viewer\n"
+
+#. Plugin Name of the plugin
+msgid "Simple Log Viewer"
+msgstr ""
+
+#. Description of the plugin
+msgid "Um simples plugin para registrar erros em tempo real em uma metabox no painel administrativo."
+msgstr ""
+
+#. Author of the plugin
+msgid "Pedro Avelar"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://pedroavelar.com.br"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:9
+msgid "Configurações do  Simple Log Viewer"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:35
+msgid "Configure as opções principais do Simple Log Viewer."
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:30
+msgid "Ativar WP_DEBUG"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:117
+msgid "Use esta seção para ativar o WP_DEBUG."
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/pages/simple-create-log-viewer-page.php:7
+msgid "Configurações do Simple Log Viewer"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:27
+msgid "Opções Principais"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:28
+msgid "Limpar Arquivo de Logs"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:29
+msgid "Depuração"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:56
+msgid "Limpar"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:117
+msgid "Verificação manual de logs concluída."
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:98
+msgid "Arquivo de log não encontrado."
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:95
+msgid "Verificar Logs"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:80
+msgid "Não há erros no log."
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:55
+msgid "Selecione o número de linhas:"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:45
+msgid "Ative o WP_DEBUG somente para fins de resolução de erros. O WP_DEBUG do WordPress está localizado no arquivo wp-config.php ative-o para ver os erros"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:46
+msgid "Ative o WP_DEBUG do WordPress localizado no arquivo wp-config.php para ver os erros"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-metabox.php:5
+msgid "Logs de erros WordPress"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:5
+msgid "Alterações feitas com sucesso!"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:45
+msgid "saiba mais"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:46
+msgid "Fechar aviso"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:41
+msgid "Ative a opção de limpeza de logs para gerar um novo arquivo de logs"
+msgstr ""
+
+#: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:41
+msgid "saiba mais"
+msgstr ""

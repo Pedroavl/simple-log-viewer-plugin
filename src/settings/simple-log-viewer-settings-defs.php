@@ -6,7 +6,7 @@ function slv_log_viewer_settings_page() {
     }
     ?>
     <div class="wrap">
-        <h2><?php __('Configurações do  Simple Log Viewer', SLV_PLUGIN_TEXT_DOMAIN); ?></h2>
+        <h2><?php _e('Configurações do  Simple Log Viewer', SLV_PLUGIN_TEXT_DOMAIN); ?></h2>
         <form method="post" action="options.php">
             <?php
             settings_fields('slv-log-viewer-settings');
