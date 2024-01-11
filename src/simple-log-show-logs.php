@@ -42,9 +42,9 @@
     
     function slv_log_viewer_dashboard_widget_function() {
         if (!defined('WP_DEBUG') || WP_DEBUG === false) {
-            $is_wp_debug_activate = '<div class="notice notice-warning settings-error is-dismissible"><p><strong>' . __('Ative o WP_DEBUG somente para fins de resolução de erros. O WP_DEBUG do WordPress está localizado no arquivo wp-config.php ative-o para ver os erros', SLV_PLUGIN_TEXT_DOMAIN) . '</strong></p></div>';
-            __('Ative o WP_DEBUG do WordPress localizado no arquivo wp-config.php para ver os erros', SLV_PLUGIN_TEXT_DOMAIN).'<button type="button" class="notice-dismiss"><span class="screen-reader-text">'.__('Fechar aviso').'</span></button>';
-            return $is_wp_debug_activate;
+            $is_wp_debug_activate = '<div class="notice notice-warning settings-error is-dismissible"><p><strong>' . __('Ative o WP_DEBUG somente para fins de resolução de erros. O WP_DEBUG do WordPress está localizado no arquivo wp-config.php ative-o para ver os erros', SLV_PLUGIN_TEXT_DOMAIN) . '</strong>' . ' <a href="' . esc_url(admin_url('admin.php?page=slv-log-viewer-settings')) . '">' . esc_html__('saiba mais', SLV_PLUGIN_TEXT_DOMAIN) .'</a>.</p>';
+            $is_wp_debug_activate .= '<button type="button" class="notice-dismiss"><span class="screen-reader-text">' . __('Fechar aviso', SLV_PLUGIN_TEXT_DOMAIN) . '</span></button></div>';
+            echo $is_wp_debug_activate;
         }
     
         $num_linhas = isset($_POST['num_linhas']) ? absint($_POST['num_linhas']) : 1000;
@@ -52,7 +52,7 @@
     
         ?>
         <form method="post" action="">
-            <label for="num_linhas_select" style="color: #000000!important"><?php __('Selecione o número de linhas:', SLV_PLUGIN_TEXT_DOMAIN);  ?></label><br/>
+            <label for="num_linhas_select" style="color: #000000!important"><?php print_r( __('Selecione o número de linhas:', SLV_PLUGIN_TEXT_DOMAIN));  ?></label><br/>
             <select style="width: 100%; margin-bottom: 12px;" id="num_linhas_select" name="num_linhas" onchange="this.form.submit()">
                 <?php
                 $options = array(1, 5, 250, 500, 1000, 1500);
