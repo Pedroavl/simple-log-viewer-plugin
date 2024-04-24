@@ -103,8 +103,8 @@ msgid "Alterações feitas com sucesso!"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:45
-msgid "saiba mais"
-msgstr ""
+msgid " saiba mais"
+msgstr " "
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:46
 msgid "Fechar aviso"

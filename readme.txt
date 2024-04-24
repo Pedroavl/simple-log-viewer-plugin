@@ -1,21 +1,21 @@
 === Simple Log Viewer ===
 Contributors: pedroasa
-Tags: erros, logs, debug, wordpress
+Tags: erros, logs, debug
 Donate link: https://pedroavelar.com.br/
 Requires at least: 5.4
 Tested up to: 6.4.2
 Requires PHP: 7.4
-Stable tag: 1.0.0
-License: GNU General Public License v3.0
+Stable tag: 1.0.3
+License: GPL-3.0-or-later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Um simples plugin para registrar erros em tempo real em uma metabox no painel administrativo.
+A simple plugin to log errors in real time in a metabox in the admin panel.
 
 == Description ==
 Um simples plugin para registrar erros em tempo real em uma metabox no painel administrativo.
 
 == Installation ==
-1. Upload \"pwp-log-viwer.php\" to the \"/wp-content/plugins/\" directory.
+1. Upload \"simple-log-viewer.php\" to the \"/wp-content/plugins/\" directory.
 2. Activate the plugin through the \"Plugins\" menu in WordPress.
 3. Activate WP_DEBUG in wp-config.php
 
@@ -29,13 +29,14 @@ Send an email to pedro.emanuel.avl@gmail.com with subject contribute to Simple L
 
 
 == Screenshots ==
-1. Adding logs archive logic
-2. Bug fix conflicts ajax calls in browser console, and fix charger loading page
-3. Added option to activate WP_DEBUG in plugin settings
+1. View logs in metabox
+2. Settings page for enable WP_DEBUG and clear logs
 
 
 == Changelog ==
 **Path Version**
+1.0.3 - Bug fix: the option to activate WP_DEBUG was forcing activation even if the checkbox was unchecked  
+1.0.2 - Correction in the directory structure to save log directory for uploads
 1.0.1 - internationalization and support WP_DEBUG enable in pannel settings
 **Version Beta**
 1.0.0 Pre release

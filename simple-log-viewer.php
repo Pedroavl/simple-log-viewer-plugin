@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Simple Log Viewer
-Description: Um simples plugin para registrar erros em tempo real em uma metabox no painel administrativo.
-Version: 1.0.1
+Description: A simple plugin to log errors in real time in a metabox in the admin panel.
+Version: 1.0.3
 Author: Pedro Avelar
 Author URI: https://pedroavelar.com.br
 License: GNU General Public License v3.0
@@ -11,31 +11,52 @@ Text Domain: simple-log-viewer
 Domain Path: /languages
 */
 
-if ( ! defined( 'ABSPATH' ) ) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-define('SLV_PLUGIN_PREFIX', 'slv_');
-define('SLV_PLUGIN_VERSION', '1.0.0');
-define('SLV_PLUGIN_DIR', plugin_dir_path( dirname(__FILE__) ) . 'simple-log-viewer/');
-define('SLV_PLUGIN_TEXT_DOMAIN', 'simple-log-viewer');
+// Obtém o diretório de upload do WordPress
+$upload_dir = wp_upload_dir();
 
-if ( ! defined( 'SLV_PLUGIN_BASE' ) ) {
-    define( 'SLV_PLUGIN_BASE', plugin_basename( __FILE__ ) );
+// Constrói o caminho completo para o diretório de logs
+$log_dir_path = $upload_dir['basedir'] . '/simple-log-viewer/logs/';
+
+define('SLVPL_PLUGIN_PREFIX', 'slvpl_');
+define('SLVPL_PLUGIN_VERSION', '1.0.3');
+define('SLVPL_PLUGIN_DIR', plugin_dir_path( __FILE__ ));
+define('SLVPL_PLUGIN_TEXT_DOMAIN', 'simple-log-viewer');
+define('SLVPL_UPLOADS_LOGS_DIR', $log_dir_path);
+
+
+if ( ! defined( 'SLVPL_PLUGIN_BASE' ) ) {
+    define( 'SLVPL_PLUGIN_BASE', plugin_basename( __FILE__ ) );
 }
 
 // Carrega o domínio de texto do plugin
-add_action('plugins_loaded', 'slv_load_textdomain');
-function slv_load_textdomain() {
-    load_plugin_textdomain(SLV_PLUGIN_TEXT_DOMAIN, false, dirname(SLV_PLUGIN_BASE) . '/languages/');
+add_action('plugins_loaded', 'slvpl_load_textdomain');
+function slvpl_load_textdomain() {
+    load_plugin_textdomain(SLVPL_PLUGIN_TEXT_DOMAIN, false, dirname(SLVPL_PLUGIN_BASE) . '/languages/');
 }
 
-require_once SLV_PLUGIN_DIR . 'src/simple-log-viewer-create-log-file.php';
-require_once SLV_PLUGIN_DIR . 'src/simple-log-show-logs.php';
-require_once SLV_PLUGIN_DIR . 'src/simple-log-show-metabox.php';
 
-require_once SLV_PLUGIN_DIR . 'src/pages/simple-create-log-viewer-page.php';
+function slvpl_enqueue_scripts() {
+    wp_enqueue_script( 'slvplajaxloader',  plugin_dir_url(__FILE__) . 'src/assets/js/index.js', array( 'jquery' ), '1.0', true);
 
-require_once SLV_PLUGIN_DIR . 'src/logs/simple-logs-viewer-log.php';
+    $rest_url = esc_url_raw( rest_url() );
 
-require_once SLV_PLUGIN_DIR . 'src/settings/simple-log-viewer-settings-defs.php';
+    wp_localize_script( 'slvplajaxloader', 'ajax_object', array(
+        'ajaxurl' => admin_url( 'admin-ajax.php' ),
+        'rest_url' => $rest_url,
+        'nonce' => wp_create_nonce('slvpl-nonce')
+    ));
+}
+add_action('admin_enqueue_scripts', 'slvpl_enqueue_scripts');
+
+
+require_once SLVPL_PLUGIN_DIR . 'src/simple-log-viewer-create-log-file.php';
+require_once SLVPL_PLUGIN_DIR . 'src/simple-log-show-logs.php';
+require_once SLVPL_PLUGIN_DIR . 'src/simple-log-show-metabox.php';
+
+require_once SLVPL_PLUGIN_DIR . 'src/pages/simple-create-log-viewer-page.php';
+
+require_once SLVPL_PLUGIN_DIR . 'src/logs/simple-logs-viewer-log.php';
+
+require_once SLVPL_PLUGIN_DIR . 'src/settings/simple-log-viewer-settings-defs.php';
