@@ -2,7 +2,7 @@
 /*
 Plugin Name: Simple Log Viewer
 Description: A simple plugin to log errors in real time in a metabox in the admin panel.
-Version: 1.0.3
+Version: 1.0.3.1
 Author: Pedro Avelar
 Author URI: https://pedroavelar.com.br
 License: GNU General Public License v3.0

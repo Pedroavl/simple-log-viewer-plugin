@@ -5,7 +5,7 @@ Donate link: https://pedroavelar.com.br/
 Requires at least: 5.4
 Tested up to: 6.4.2
 Requires PHP: 7.4
-Stable tag: 1.0.3
+Stable tag: 1.0.3.1
 License: GPL-3.0-or-later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -34,6 +34,8 @@ Send an email to pedro.emanuel.avl@gmail.com with subject contribute to Simple L
 
 
 == Changelog ==
+**Security path version**
+1.0.3.1 - Fix security issue, permission public acess endpoint errors changed for proteged route
 **Path Version**
 1.0.3 - Bug fix: the option to activate WP_DEBUG was forcing activation even if the checkbox was unchecked  
 1.0.2 - Correction in the directory structure to save log directory for uploads

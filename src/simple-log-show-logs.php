@@ -17,9 +17,15 @@
     add_action('rest_api_init', function () {
         register_rest_route('simplelogviewer/v1', '/errors', array(
             'methods' => 'GET',
-            'callback' => 'slvpl_get_latest_errors'
+            'callback' => 'slvpl_get_latest_errors',
+            'permission_callback' => 'slvpl_check_logged_in_and_admin_user' // Verifica se o usuário está logado e é administrador
         ));
     });
+
+    // Função de callback para verificar se o usuário está logado e é um administrador
+    function slvpl_check_logged_in_and_admin_user() {
+        return is_user_logged_in() && current_user_can('manage_options'); // Retorna true se o usuário estiver logado e for um administrador
+    } 
 
     function slvpl_log_viewer_admin_styles() {
         wp_register_style('admin-css', false);
