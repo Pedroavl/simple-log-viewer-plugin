@@ -2,13 +2,13 @@ jQuery(document).ready(function ($) {
     function updateLogs() {
         var numLinhasSelecionado = $('#num_linhas_select').val();
 
-        // Envia o número inicial de linhas se ainda não estiver definido
+        // Send the initial number lines if not have defined
         if (!numLinhasSelecionado) {
-            numLinhasSelecionado = 1000; // Ou qualquer valor padrão
+            numLinhasSelecionado = 1000; // default value
         }
 
         $.ajax({
-            url: ajax_object.rest_url + 'simplelogviewer/v1/errors', // Adiciona a parte específica do endpoint REST
+            url: ajax_object.rest_url + 'simplelogviewer/v1/errors', // REST endpoint
             type: 'GET',
             data: { num_linhas: numLinhasSelecionado },
             success: function (results) {
@@ -23,12 +23,12 @@ jQuery(document).ready(function ($) {
         });
     }
 
-    // Adiciona um evento de clique ao botão
+    // Add a click button event
     $('#check-logs-button').on('click', function () {
 
         var numLinhasSelecionado = $('#num_linhas_select').val();
 
-        // Chama a função de verificação manual de logs quando o botão é clicado
+        // Tell the function check manual logs when the clicked button
         $.ajax({
             url: ajax_object.ajaxurl,
             type: 'POST',
@@ -41,7 +41,7 @@ jQuery(document).ready(function ($) {
 
                 var successMessage = results.data.message;
 
-                // Atualiza os logs após a verificação manual
+                // Update logs after the manual check
                 var logsWithLineBreaks = results.data.logs.join('<br /><br />');
         
                 $('#slv-log-viewer').html(logsWithLineBreaks);

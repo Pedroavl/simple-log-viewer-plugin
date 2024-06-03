@@ -19,7 +19,7 @@ msgid "Simple Log Viewer"
 msgstr ""
 
 #. Description of the plugin
-msgid "Um simples plugin para registrar erros em tempo real em uma metabox no painel administrativo."
+msgid "A simple plugin to log errors in real time in a metabox in the admin panel."
 msgstr ""
 
 #. Author of the plugin
@@ -31,89 +31,89 @@ msgid "https://pedroavelar.com.br"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:9
-msgid "Configurações do  Simple Log Viewer"
+msgid "Simple Log Viewer Settings"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:35
-msgid "Configure as opções principais do Simple Log Viewer."
+msgid "Configure the main options of Simple Log Viewer."
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:30
-msgid "Ativar WP_DEBUG"
+msgid "Enable WP_DEBUG"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:117
-msgid "Use esta seção para ativar o WP_DEBUG."
+msgid "Use this section to enable WP_DEBUG."
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/pages/simple-create-log-viewer-page.php:7
-msgid "Configurações do Simple Log Viewer"
+msgid "Simple Log Viewer Settings"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:27
-msgid "Opções Principais"
+msgid "Main Options"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:28
-msgid "Limpar Arquivo de Logs"
+msgid "Clear Log File"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:29
-msgid "Depuração"
+msgid "Debug"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:56
-msgid "Limpar"
+msgid "To clean"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:117
-msgid "Verificação manual de logs concluída."
+msgid "Manual log check completed."
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:98
-msgid "Arquivo de log não encontrado."
+msgid "Log file not found."
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:95
-msgid "Verificar Logs"
+msgid "Check Logs"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:80
-msgid "Não há erros no log."
+msgid "There are no errors in the log."
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:55
-msgid "Selecione o número de linhas:"
+msgid "Select the number of lines:"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:45
-msgid "Ative o WP_DEBUG somente para fins de resolução de erros. O WP_DEBUG do WordPress está localizado no arquivo wp-config.php ative-o para ver os erros"
+msgid "Enable WP_DEBUG for error resolution purposes only. WordPress WP_DEBUG is located in the wp-config.php file, activate it to see errors"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:46
-msgid "Ative o WP_DEBUG do WordPress localizado no arquivo wp-config.php para ver os erros"
+msgid "Enable WordPress WP_DEBUG located in the wp-config.php file to see errors"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-metabox.php:5
-msgid "Logs de erros WordPress"
+msgid "WordPress error logs"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:5
-msgid "Alterações feitas com sucesso!"
+msgid "Changes made successfully!"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:45
-msgid " saiba mais"
+msgid " know more"
 msgstr " "
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/simple-log-show-logs.php:46
-msgid "Fechar aviso"
+msgid "Close notice"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:41
-msgid "Ative a opção de limpeza de logs para gerar um novo arquivo de logs"
+msgid "Enable the log cleaning option to generate a new log file"
 msgstr ""
 
 #: pedroavelar/app/public/wp-content/plugins/simple-log-viewer/src/settings/simple-log-viewer-settings-defs.php:41
-msgid "saiba mais"
+msgid "know more"
 msgstr ""
