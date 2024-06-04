@@ -52,6 +52,7 @@ class SettingsController {
     }
 
     public function adminNotice() {
+        echo '<div class="notice notice-warning is-dismissible is-dismissible"><p><strong>' . esc_html__('For the use WP-CLI, is necessary the run command wp slvpl logs-erros [--num_linhas=<num_linhas>] - (Simple Log Viewer)', 'simple-log-viewer') .'</strong></p></div>';
         if (file_exists($this->log_file) && !empty(file_get_contents($this->log_file))) {
             echo '<div class="notice notice-warning settings-error is-dismissible"><p>' . esc_html__('Enable the log cleaning option to generate a new log file', 'simple-log-viewer') . ' <a href="' . esc_url(admin_url('admin.php?page=slvpl-log-viewer-settings')) . '"> ' . esc_html__('know more', 'simple-log-viewer') . '</a>.</p></div>';
         }
