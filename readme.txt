@@ -3,16 +3,24 @@ Contributors: pedroasa
 Tags: erros, logs, debug
 Donate link: https://pedroavelar.com.br/
 Requires at least: 5.4
-Tested up to: 6.4.2
+Tested up to: 6.5.3
 Requires PHP: 7.4
-Stable tag: 1.0.3.2
+Stable tag: 1.0.4
 License: GPL-3.0-or-later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-A simple plugin to log errors in real time in a metabox in the admin panel.
+A simple plugin to log errors in real time in a metabox in the admin panel, too integrated with WP-CLI
 
 == Description ==
-Um simples plugin para registrar erros em tempo real em uma metabox no painel administrativo.
+A simple plugin to log errors in real time in a metabox in the admin panel, too integrated with WP-CLI.
+
+For the run command with WP-CLI is necessary to activate the plugin and install WP-CLI.
+
+When running, paste the command `wp advpl logs-erros` into the terminal, by default the number of lines is 1000 but you can control the number of lines through the `--num_linhas` parameter
+
+**For the example**:  `wp slvpl logs-erros [--num_linhas=<num_linhas>]` or 
+better in the example `wp slvpl logs-erros --num_linhas=100`.
+
 
 == Installation ==
 1. Upload \"simple-log-viewer.php\" to the \"/wp-content/plugins/\" directory.
@@ -34,11 +42,8 @@ Send an email to pedro.emanuel.avl@gmail.com with subject contribute to Simple L
 
 
 == Changelog ==
-**Refactor code version**
-1.0.3.2 - Refactor code to improve performance and better maintenance
-**Security path version**
-1.0.3.1 - Fix security issue, permission public acess endpoint errors changed for proteged route
 **Path Version**
+1.0.4 - Add WP-CLI integration
 1.0.3 - Bug fix: the option to activate WP_DEBUG was forcing activation even if the checkbox was unchecked  
 1.0.2 - Correction in the directory structure to save log directory for uploads
 1.0.1 - internationalization and support WP_DEBUG enable in pannel settings
@@ -46,3 +51,8 @@ Send an email to pedro.emanuel.avl@gmail.com with subject contribute to Simple L
 1.0.0 Pre release
 **Develop version**
 0.0.1 Initial release
+
+**Refactor code version**
+1.0.3.2 - Refactor code to improve performance and better maintenance
+**Security path version**
+1.0.3.1 - Fix security issue, permission public acess endpoint errors changed for proteged route

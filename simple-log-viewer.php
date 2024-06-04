@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Simple Log Viewer
-Description: A simple plugin to log errors in real time in a metabox in the admin panel.
-Version: 1.0.3.2
+Description: A simple plugin to log errors in real time in a metabox in the admin panel, too integrated with WP-CLI.
+Version: 1.0.4
 Author: Pedro Avelar
 Author URI: https://pedroavelar.com.br
 License: GNU General Public License v3.0
@@ -62,6 +62,7 @@ class SLVPL_SimpleLogViewer {
         new \SLVPL\App\Controllers\LogController();
         new \SLVPL\App\Controllers\SettingsController();
         new \SLVPL\App\Controllers\MenuController();
+        new \SLVPL\App\Controllers\WPCLIController();
     }
 
     private function init_views() {
